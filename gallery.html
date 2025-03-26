@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/js.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Gellary</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .a img {
+            /* width: 200px; */
+            cursor: pointer;
+        }
+        
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(20, 20, 20, 0.9);
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .overlay img {
+            object-fit: contain;
+            max-width: 95vw;
+            max-height: 95vh;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container-fluid p-0 m-0">
+        <div class="row">
+            <div class="col-sm-12">
+
+            </div>
+
+        </div>
+
+
+
+        <div class="row p-0 m-0">
+
+            <div class=" a1 col-sm-12">
+
+                <div class="aa">
+                    <img src="images/foot2.jpeg" alt="not" onclick="openImage(this)">
+
+                </div>
+                <div class="overlay" id="overlay" onclick="closeImage()">
+                    <img id="popupImage" />
+                </div>
+
+                <div class="ab">
+                    <img src="images/ankle1.jpg" alt="" onclick="openImage(this)">
+                </div>
+                <div class="ac">
+                    <img src="images/ankle2.jpg" alt="" onclick="openImage(this)">
+                </div>
+                <div class="ad">
+                    <img src="images/neck2.jpg" alt="" onclick="openImage(this)">
+                </div>
+
+                <div class="ae">
+                    <img src="images/body1.jpg" alt="" onclick="openImage(this)">
+                </div>
+                <div class="af">
+                    <img src="images/foot1.jpeg" alt="" onclick="openImage(this)">
+                </div>
+                <div class="ag">
+                    <img src="images/body2.jpg" alt="" onclick="openImage(this)">
+                </div>
+
+
+                <div class="ab">
+                    <img src="images/ankle4.jpeg" alt="" onclick="openImage(this)">
+                </div>
+                <div class="ac">
+                    <img src="images/ankle3.jpg" alt="" onclick="openImage(this)">
+                </div>
+                <div class="ad">
+                    <img src="images/neck1.jpg" alt="" onclick="openImage(this)">
+                </div>
+
+                <div class="ae">
+                    <img src="images/body3.jpg" alt="" onclick="openImage(this)">
+                </div>
+                <div class="af">
+                    <img src="images/ankle3.jpeg" alt="" onclick="openImage(this)">
+                </div>
+                <div class="ag">
+                    <img src="images/nacke3.jpg" alt="" onclick="openImage(this)">
+                </div>
+                <div class="ag">
+                    <img src="images/hand1.jpg" alt="" onclick="openImage(this)">
+                </div>
+                <div class="ag">
+                    <img src="images/nack3.jpg" alt="" onclick="openImage(this)">
+                </div>
+                <div class="ag">
+                    <img src="images/nack4.jpg" alt="" onclick="openImage(this)">
+                </div>
+                <div class="ag">
+                    <img src="images/nack5.jpg" alt="" onclick="openImage(this)">
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row py-5 text-light">
+                    <div class="col-md-6">
+                        <h4 class="text-center text-primary"> About Us</h4>
+                        <div class="context">
+                            <p>
+                                Massage is perhaps one of the oldest healing traditions. Many ancient peoples – including the Ancient Greeks, Egyptians, Chinese and Indians – were convinced of the therapeutic properties of massage and used it to treat a variety of ailments. Massage
+                                therapy is the practice of kneading or manipulating a person’s muscles and other soft-tissue in order to improve their wellbeing or health. It is a form of manual therapy that includes holding, moving, and applying pressure
+                                to the muscles, tendons, ligaments and fascia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-center text-primary">Useful Details</h4>
+                        <div class="text-center">
+                            <h4>
+                                <a href="index.html" style="color: rgb(234, 250, 235); text-decoration: none;font-weight: 600;">
+                                    <i class="bi bi-box-arrow-left"></i> Home
+                                </a>
+                            </h4>
+                            <h4>
+                                <i class="bi bi-telephone-outbound-fill"></i> :- +91 1234567890 </h4>
+                            <h4 class="ps-2"> <i class="bi bi-envelope-arrow-up-fill"></i> :- xyz@gamil.com</h4>
+                            <h4>
+                                <i class="bi bi-geo-alt-fill"></i> :- Greater Noida Gautam Buddha Nagar <u>UP</u>
+                            </h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        function openImage(imgElement) {
+            const overlay = document.getElementById('overlay');
+            const popupImage = document.getElementById('popupImage');
+            popupImage.src = imgElement.src;
+            overlay.style.display = 'flex';
+        }
+
+        function closeImage() {
+            const overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

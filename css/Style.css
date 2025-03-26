@@ -1,0 +1,74 @@
+.img img {
+    border-radius: 10px 10px 0px 0px;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.a {
+    border-radius: 10px 10px 0px 0px;
+    transition: 1s;
+}
+
+.a:hover {
+    padding: 0;
+    background-color: rgb(251, 248, 248);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    scale: 1.0;
+}
+
+.linediv a {
+    color: green;
+}
+
+.contact {
+    border-radius: 10px;
+    background-color: rgba(217, 218, 218, 0.933);
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    box-shadow: 0 4px 8px 0;
+    h1 {
+        font-size: 50px;
+    }
+    h6 {
+        color: red;
+        font-weight: 800;
+    }
+    i {
+        color: red;
+    }
+}
+
+.formdiv {
+    text-align: left;
+}
+
+.footer {
+    background-color: rgb(32, 32, 32);
+    margin: 0px;
+}
+
+.context {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.navbar {
+    background-color: hwb(64 83% 5%);
+}
+
+
+/* gallery ---------------- */
+
+.a1 {
+    column-width: 17em;
+    column-gap: 20px;
+}
+
+.a1 img {
+    margin-bottom: 18px;
+    width: 100%;
+    border-radius: 1rem;
+}
